@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NVIDIA Marketplace</title>
+
+<!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e5e5e5;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 25px auto;
+    background: white;
+    padding: 15px;
+}
+
+/* HEADER */
+
+header {
+    background: #050505;
+    color: white;
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav h3 {
+    font-size: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li {
+    font-size: 12px;
+}
+
+nav input {
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.hero {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background: linear-gradient();
+    color: white;
+}
+
+.hero h1 {
+    font-size: 30px;
+}
+
+.hero img {
+    width: 55%;
+    height: 160px;
+    object-fit: contain;
+}
+
+.buy {
+    background: #76b900;
+    color: black;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* SECTIONS */
+
+section {
+    padding: 15px 5px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 25px;
+}
+
+/* CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    text-align: center;
+    box-shadow: 0 5px 12px #0002;
+    transition: 0.4s;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px #0003;
+}
+
+.card img {
+    width: 100%;
+    height: 115px;
+    object-fit: cover;
+}
+
+.card h4 {
+    font-size: 13px;
+    padding: 12px 5px;
+}
+
+.card a {
+    display: inline-block;
+    color: #76b900;
+    text-decoration: none;
+    font-size: 12px;
+    padding-bottom: 15px;
+}
+
+/* NVIDIA BANNER */
+
+.banner {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 20px;
+    background: #fafafa;
+}
+
+.banner img {
+    width: 55%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.banner h2 {
+    color: #76b900;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.banner p {
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+footer {
+    padding: 35px 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 700px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 20px;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+}
+
+@media(max-width: 400px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+    <nav>
+        <h3>Marketplace</h3>
+        <ul>
+            <li>Products</li>
+            <li>Brands</li>
+            <li>Deals</li>
+            <li>Support</li>
+        </ul>
+        <input type="text" placeholder="Search marketplace">
+    </nav>
+
+    <div class="hero">
+        <div>
+            <h1>More Options.<br>More to Love.</h1>
+            <button class="buy">Buy Now</button>
+        </div>
+        <img src="slider2 2.png" alt="Gaming">
+    </div>
+</header>
+
+<!-- GAMING -->
+
+<section>
+<h2 data-aos="fade-down">Gaming and Entertainment</h2>
+
+<div class="cards">
+
+<div class="card" data-aos="fade-up">
+<img src="card1 1.png" alt="">
+<h4>Graphics Cards and Desktops</h4>
+<a href="#">Shop now ›</a>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="100">
+<img src="card2 1.png" alt="">
+<h4>Graphics Cards and Desktops</h4>
+<a href="#">Shop now ›</a>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="200">
+<img src="card3 1.png" alt="">
+<h4>Graphics Cards and Desktops</h4>
+<a href="#">Shop now ›</a>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="300">
+<img src="card4 1.png" alt="">
+<h4>Graphics Cards and Desktops</h4>
+<a href="#">Shop now ›</a>
+</div>
+
+</div>
+</section>
+
+<!-- GRAPHICS -->
+
+<section>
+<h2 data-aos="fade-down">Graphics Cards, Laptops and Embedded Systems</h2>
+
+<div class="cards">
+
+<div class="card" data-aos="zoom-in">
+<img src="card5 1.png" alt="">
+<h4>Graphics Cards and Desktops</h4>
+<a href="#">Shop now ›</a>
+</div>
+
+<div class="card" data-aos="zoom-in" data-aos-delay="100">
+<img src="card6 1.png" alt="">
+<h4>Graphics Cards and Desktops</h4>
+<a href="#">Shop now ›</a>
+</div>
+
+<div class="card" data-aos="zoom-in" data-aos-delay="200">
+<img src="card7 1.png" alt="">
+<h4>Graphics Cards and Desktops</h4>
+<a href="#">Shop now ›</a>
+</div>
+
+<div class="card" data-aos="zoom-in" data-aos-delay="300">
+<img src="card8 1.png" alt="">
+<h4>Graphics Cards and Desktops</h4>
+<a href="#">Shop now ›</a>
+</div>
+
+</div>
+</section>
+
+<!-- NETWORKING -->
+
+<section>
+<h2 data-aos="fade-down">Networking</h2>
+
+<div class="cards">
+
+<div class="card" data-aos="flip-left">
+<img src="card9 1.png" alt="">
+<h4>Graphics Cards and Desktops</h4
+a href="#">Shop now ›</a>
+</div>
+
+<div class="card" data-aos="flip-left" data-aos-delay="100">
+<img src="card91 1.png" alt="">
+<h4>Graphics Cards and Desktops</h4>
+<a href="#">Shop now ›</a>
+</div>
+
+<div class="card" data-aos="flip-left" data-aos-delay="200">
+<img src="card92 1.png" alt="">
+<h4>Graphics Cards and Desktops</h4>
+<a href="#">Shop now ›</a>
+</div>
+
+<div class="card" data-aos="flip-left" data-aos-delay="300">
+<img src="card93 1.png" alt="">
+<h4>Graphics Cards and Desktops</h4>
+<a href="#">Shop now ›</a>
+</div>
+
+</div>
+</section>
+
+<!-- NVIDIA BANNER -->
+
+<div class="banner" data-aos="fade-up">
+<img src="computer 1.png">
+
+<div>
+<h2>NVIDIA Deep<br>Learning Institute</h2>
+<p>Education and Training Solutions to Solve the World's Most Challenging Problems</p>
+<button class="buy">Get Online Training</button>
+</div>
+</div>
+
+<footer>
+    <b>🟢 NVIDIA</b>
+    <span>USA - United States</span>
+</footer>
+
+</div>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 80,
+    easing: 'ease-in-out'
+});
+</script>
+
+</body>
+</html>
+
+</body>
+</html>
